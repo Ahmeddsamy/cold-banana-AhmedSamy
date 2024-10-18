@@ -1,0 +1,25 @@
+@import '../../styles/variables.module.scss';
+
+.button {
+  background: linear-gradient(90.71deg, $color-gradient-start 0%, $color-gradient-end 100%);
+  color: $color-white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: $font-weight-regular;
+  transition: transform 0.2s;
+}
+
+.large {
+  width: 249px;
+  height: 60px;
+  font-size: $font-size-medium;
+  font-weight: $font-weight-medium;
+}
+
+.small {
+  width: 175px;
+  height: 40px;
+  font-size: $font-size-xsmall;
+  font-weight: $font-weight-medium;
+}

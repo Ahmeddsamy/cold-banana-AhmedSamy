@@ -1,0 +1,79 @@
+@import '../../styles/variables.module.scss';
+
+.footerContainer {
+    position: relative; 
+    background-color: $color-white;
+    margin-top: 22rem;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem; 
+    background-color: $color-white;
+}
+
+.blob {
+    position: absolute;
+    bottom: -33px;
+    left: 0;
+}
+
+.blobText {
+    position: relative; 
+    color: $color-white; 
+    width: 34%;
+    margin-left: 2rem;
+    h2 {
+        font-size: $font-size-xlarge;
+        font-weight: $font-weight-bold;
+        margin-bottom: 1rem;
+    }
+    
+    p {
+        font-size: $font-size-medium;
+        font-weight: $font-weight-light;
+    }
+
+    @media (min-width: 1600px) {
+        width: 29%;
+    }
+}
+
+.links {
+    display: flex;
+    gap:8rem;
+
+    .column {
+        h3 {
+            background: linear-gradient(90.71deg, $color-gradient-start 0%, $color-gradient-end 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: $font-size-small;
+            margin-bottom: 1rem;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+
+            li {
+                color: $color-black;
+                margin-bottom: 0.5rem;
+                cursor: pointer;
+
+            }
+        }
+
+        .icons {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 0.5rem;
+
+            img {
+                cursor: pointer;
+            }
+        }
+    }
+}

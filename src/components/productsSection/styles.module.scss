@@ -1,0 +1,49 @@
+@import '../../styles/variables.module.scss';
+
+.productsSection {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(369px, 1fr));
+    gap: 90px;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 1rem;
+}
+
+@media (min-width: 1600px) {
+    .productsSection {
+        grid-template-columns: repeat(auto-fit, minmax(369px, 1fr));
+        gap: 90px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .productsSection {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .productsSection {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+.loadMoreContainer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: start;
+}
+
+.loadMoreButton {
+    padding: 10px 20px;
+    background-color: transparent;
+    font-family: inherit;
+    color: $color-blue;
+    border: none;
+    font-size: $font-size-large;
+    font-weight: $font-weight-medium;
+    cursor: pointer;
+}

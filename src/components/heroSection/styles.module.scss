@@ -1,0 +1,38 @@
+@import '../../styles/variables.module.scss';
+
+.container {
+    margin-top: 10rem;
+}
+
+.heroSection {
+  display: flex;
+  flex-direction: column;
+  color: $color-black;
+  margin-left: 24rem;
+
+  h1 {
+    font-size: $font-size-xxlarge;
+    font-weight: $font-weight-bold;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+    width: 52%;
+  }
+}
+
+.background {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  top: 44px;
+  z-index: -3;
+  overflow: hidden;
+}
+
+.background2 {
+  display: flex;
+  position: absolute;
+  right: 0;
+  z-index: -2;
+  overflow: hidden;
+}

@@ -1,0 +1,38 @@
+@import '../../styles/variables.module.scss';
+
+.navBar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 4rem;
+  background-color: transparent;
+}
+
+.logo {
+  font-size: $font-size-xlarge;
+  font-weight: $font-weight-bold;
+  color: $color-white;
+}
+
+.navLinks {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin-left: auto; 
+  padding-right: 6rem;
+}
+
+.navLinks li {
+  cursor: pointer;
+  color: $color-black;
+  font-size: $font-size-xsmall;
+  font-weight: $font-weight-medium;
+}
+
+.left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
